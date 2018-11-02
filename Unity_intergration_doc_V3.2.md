@@ -28,6 +28,12 @@
 ## Intergration：
 ### All interface should be call in main thread!
 
+# If You Choose build your own server side platform, you can download all the server program from [download server program from site](http://www.reechat.org)
+-When you have your own server platform, point the sdk to your platform by call the interface
+```
+VoiceManager.Instance.SetUSdkParams("RoomServerAddr", "www.reechat.org:8080");
+```
+
 - Set join room callback function
 ```
 VoiceManager.OnJoinRoomComplete += (int retCode) =>
