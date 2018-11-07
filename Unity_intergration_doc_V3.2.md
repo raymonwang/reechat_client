@@ -10,16 +10,15 @@
 	    User can record his voice to a audio file with sdk, then sdk will store the file to server side and feedback a record url.
 	    User can dispatch the record url to any users and they can playback the record url again.
 	    
-  - This SDK support video conference and broadcast the conference to internet with rtmp stream or hls stream;
+  - This Unity SDK only support voice conference and broadcast the conference to internet with rtmp stream or hls stream;
 
   - Caution:
-    This SDK can only compile for iphone device(no simulator)
+    This SDK can only compile for iphone device(no simulator) and android device!
 
 ## download sdk and decompress it
 > [download sdk from site](http://www.reechat.org)
 
 ## double click reechatsdk_unity_release_xxx.unitypackage and import the content to Assets directory
-
 
 ## Configuration  
    - Add REECHAT_ENABLE macro at "Script Define Symbols" of "Player setting", or else you can not call reechat function.
@@ -31,7 +30,7 @@
 # If You Choose build your own server side platform, you can download all the server program from [download server program from site](http://www.reechat.org)
 -When you have your own server platform, point the sdk to your platform by call the interface
 ```
-VoiceManager.Instance.SetUSdkParams("RoomServerAddr", "www.reechat.org:8080");
+VoiceManager.Instance.SetUSdkParams("RoomServerAddr", "you_service_host:your_service_port");
 ```
 
 - Set join room callback function
