@@ -128,7 +128,7 @@ VoiceManager.Instance.StartRecordVoice();
 VoiceManager.Instance.StopRecordVoice ();
 ```
 
-- 取消录制语音消息
+- Cancel record IM message
 ```
 VoiceManager.Instance.CancelRecordVoice ();
 ```
